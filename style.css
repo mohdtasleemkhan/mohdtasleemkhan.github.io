@@ -1,20 +1,15 @@
-/* -------------------------
-   GLOBAL STYLES
-------------------------- */
+/* GLOBAL */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #f2f2f2;
   color: #333;
+  scroll-behavior: smooth;
 }
 
-a {
-  text-decoration: none;
-}
+a { text-decoration: none; }
 
-/* -------------------------
-   NAVBAR
-------------------------- */
+/* NAVBAR */
 nav {
   background-color: #222;
   padding: 12px;
@@ -30,13 +25,9 @@ nav a {
   font-weight: bold;
 }
 
-nav a:hover {
-  text-decoration: underline;
-}
+nav a:hover { text-decoration: underline; }
 
-/* -------------------------
-   HERO SECTION
-------------------------- */
+/* HERO */
 .hero {
   background: linear-gradient(135deg, #0d6efd, #084298);
   color: white;
@@ -44,45 +35,24 @@ nav a:hover {
   text-align: center;
 }
 
-.profile-pic {
-  width: 150px;
-  border-radius: 50%;
-  margin-bottom: 15px;
-}
+.profile-pic { width: 150px; border-radius: 50%; margin-bottom: 15px; }
 
-.hero h1 {
-  margin: 10px 0;
-}
+.hero h1 { margin: 10px 0; }
+.hero p { margin: 10px 0 20px; line-height: 1.5; }
+#typed { font-weight: bold; font-size: 1.3em; }
 
-.hero p {
-  margin: 10px 0 20px;
-  line-height: 1.5;
-}
-
-/* Typed effect styling */
-#typed {
-  font-weight: bold;
-  font-size: 1.3em;
-}
-
-/* Button */
+/* BUTTON */
 .btn {
   display: inline-block;
-  margin-top: 15px;
   padding: 10px 25px;
   background: white;
   color: #0d6efd;
   border-radius: 5px;
   font-weight: bold;
 }
+.btn:hover { background-color: #e9ecef; }
 
-.btn:hover {
-  background-color: #e9ecef;
-}
-
-/* -------------------------
-   SECTIONS
-------------------------- */
+/* SECTIONS */
 section {
   background: white;
   margin: 20px;
@@ -90,149 +60,52 @@ section {
   border-radius: 10px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+section:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.15); }
 
-section:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-}
+h2 { margin-bottom: 15px; }
 
-h2 {
-  color: #333;
-  margin-bottom: 15px;
-}
-
-/* -------------------------
-   SKILLS
-------------------------- */
+/* SKILLS */
 .skills {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
   justify-content: center;
 }
+.skill-card { width: 200px; margin: 10px; }
+.skill-card p { margin: 0 0 5px; font-weight: bold; }
+.progress { background: #e0e0e0; height: 10px; border-radius: 5px; overflow: hidden; }
+.progress div { height: 100%; background: #0d6efd; border-radius: 5px; }
 
-.skill-card {
-  width: 200px;
-  margin: 10px;
-}
-
-.skill-card p {
-  margin: 0 0 5px;
-  font-weight: bold;
-}
-
-.progress {
-  background: #e0e0e0;
-  height: 10px;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.progress div {
-  height: 100%;
-  background: #0d6efd;
-  border-radius: 5px;
-}
-
-/* -------------------------
-   PROJECTS
-------------------------- */
+/* PROJECTS */
 .project {
-  background: #ffffff;
+  background: #fff;
   padding: 20px;
   border-left: 5px solid #0d6efd;
   margin-top: 10px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+.project:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.15); }
 
-.project:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-}
-
-/* -------------------------
-   CONTACT FORM
-------------------------- */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-input, textarea {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-textarea {
-  resize: vertical;
-}
-
-button {
-  padding: 10px 20px;
-  background-color: #0d6efd;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-button:hover {
-  background-color: #084298;
-}
-
-/* -------------------------
-   FOOTER
-------------------------- */
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 20px;
-}
-
-/* -------------------------
-   RESPONSIVE
-------------------------- */
-@media (max-width: 600px) {
-  nav a {
-    display: block;
-    margin: 10px 0;
-  }
-
-  .profile-pic {
-    width: 120px;
-  }
-
-  section {
-    margin: 10px;
-  }
-
-  .skill-card {
-    width: 100%;
-  }
-}
+/* CONTACT FORM */
+form { display: flex; flex-direction: column; gap: 10px; }
+input, textarea { padding: 10px; border-radius: 5px; border: 1px solid #ccc; }
+textarea { resize: vertical; }
+button { padding: 10px 20px; background-color: #0d6efd; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; }
+button:hover { background-color: #084298; }
 
 /* EDUCATION & CERTIFICATES */
-#education ul, #certificates ul {
-  list-style-type: square;
-  padding-left: 20px;
-}
+#education ul, #certificates ul { list-style-type: square; padding-left: 20px; }
+#education li, #certificates li { margin-bottom: 10px; line-height: 1.5; }
+#certificates a { color: #0d6efd; font-weight: bold; }
+#certificates a:hover { text-decoration: underline; }
 
-#education li, #certificates li {
-  margin-bottom: 10px;
-  line-height: 1.5;
-}
+/* FOOTER */
+footer { background-color: #333; color: white; text-align: center; padding: 15px; margin-top: 20px; }
 
-#certificates a {
-  color: #0d6efd;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-#certificates a:hover {
-  text-decoration: underline;
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  nav a { display: block; margin: 10px 0; }
+  .profile-pic { width: 120px; }
+  section { margin: 10px; }
+  .skill-card { width: 100%; }
 }

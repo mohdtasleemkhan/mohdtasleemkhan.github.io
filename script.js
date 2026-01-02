@@ -8,15 +8,10 @@ form.addEventListener("submit", function(e) {
 
 // Typed effect for Hero
 const typedText = ["DevOps Engineer", "Site Reliability Engineer"];
-let i = 0;
-let j = 0;
-let currentText = '';
-let isDeleting = false;
-let typedSpeed = 150;
+let i = 0, j = 0, currentText = '', isDeleting = false, typedSpeed = 150;
 
 function type() {
   const element = document.getElementById('typed');
-
   if (!isDeleting && j <= typedText[i].length) {
     currentText = typedText[i].substring(0, j);
     element.textContent = currentText;
@@ -26,12 +21,11 @@ function type() {
     currentText = typedText[i].substring(0, j);
     element.textContent = currentText;
     j--;
-    setTimeout(type, typedSpeed / 2);
+    setTimeout(type, typedSpeed/2);
   } else {
     isDeleting = !isDeleting;
     if (!isDeleting) i = (i + 1) % typedText.length;
     setTimeout(type, 1000);
   }
 }
-
 type();
