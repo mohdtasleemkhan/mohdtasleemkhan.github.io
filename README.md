@@ -1,7 +1,33 @@
-# DevOps Portfolio
+# 🚀 DevOps & SRE Portfolio
 
-This is my personal portfolio website.
-## About Me
+This repository contains my personal portfolio website.
 
-My name is Mohd Tasleem Khan.
-I am a DevOps Engineer and Site Reliability Engineer.
+---
+
+## 👨‍💻 About Me
+
+Hi, I’m **Mohd Tasleem Khan**.
+I am a **DevOps Engineer & Site Reliability Engineer** with experience in AWS, CI/CD, and cloud infrastructure.
+
+---
+
+## 🛠 Tech Stack
+
+- HTML, CSS, JavaScript
+- AWS (EC2, S3, IAM, RDS)
+- Jenkins, Docker, Kubernetes
+- Git & GitHub
+
+---
+
+## ✨ Features
+
+- Responsive design
+- Resume download
+- Skills, Experience & Education sections
+- Contact & social links
+
+---
+
+## 📂 Project Structure
+
