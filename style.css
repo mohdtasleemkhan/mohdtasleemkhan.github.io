@@ -150,3 +150,21 @@ footer {
   border-left: none;
   padding-left: 0;
 }
+
+
+/* Resume Button Styling */
+.resume-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #3a8948; /* blue color */
+  color: #f3f2f7;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.resume-btn:hover {
+  background-color: #1b08c3;
+}
