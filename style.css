@@ -168,3 +168,39 @@ footer {
 .resume-btn:hover {
   background-color: #1b08c3;
 }
+
+/* -------------------------------
+   Social Links + Resume Button
+---------------------------------*/
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* Icon aur text ke beech gap */
+  margin: 5px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #0077b6; /* Hover effect */
+}
+
+.resume-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px; /* Icon aur text ke beech gap */
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #0077b6; /* Button color */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.resume-btn:hover {
+  background-color: #005f87; /* Button hover color */
+}
