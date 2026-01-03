@@ -1,147 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mohd Tasleem Khan | DevOps & SRE Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mohd Tasleem Khan | DevOps & SRE</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <!-- MODAL POPUP -->
-  <div id="welcomeModal" class="modal">
-    <div class="modal-content">
-      <h2>Welcome!</h2>
-      <p>Welcome to Mohd Tasleem Khan's Portfolio! Explore my DevOps & SRE work.</p>
-      <button id="modalOkBtn" class="btn">OK</button>
-    </div>
+
+<!-- ===== WELCOME MODAL ===== -->
+<div id="welcomeModal" class="modal">
+  <div class="modal-content">
+    <h2>Welcome 👋</h2>
+    <p>Welcome to Mohd Tasleem Khan’s DevOps & SRE Portfolio</p>
+    <button id="modalOkBtn">OK</button>
+  </div>
+</div>
+
+<!-- ===== HERO / HOME ===== -->
+<header class="hero" id="home">
+  <img src="images/me.jpg" class="profile-pic">
+  <h1>Mohd Tasleem Khan</h1>
+  <p>
+    <span id="typed">DevOps Engineer</span><br>
+    Production Support Engineer – Wipro (Client: Apple)
+  </p>
+  <a href="resume.pdf" class="btn" download>Download Resume</a>
+</header>
+
+<!-- ===== NAV ===== -->
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    Production Support Engineer with 3.5+ years at Wipro,
+    supporting Apple Ads Platform Engineering.
+  </p>
+  <p>
+    Experienced in incident management, monitoring, RCA,
+    and ensuring high availability of production systems.
+  </p>
+  <p>
+    Actively transitioning into DevOps / SRE with focus on
+    automation, CI/CD, containers, and cloud.
+  </p>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills">
+  <h2>Technical Skills</h2>
+
+  <div class="skills-container">
+    <div class="skill-box">Linux</div>
+    <div class="skill-box">Git & GitHub</div>
+    <div class="skill-box">Shell Scripting</div>
+    <div class="skill-box">CI/CD</div>
+    <div class="skill-box">Docker</div>
+    <div class="skill-box">AWS</div>
+    <div class="skill-box">Monitoring</div>
+    <div class="skill-box">Incident Management</div>
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE ===== -->
+<section id="experience">
+  <h2>Experience</h2>
+  <h3>Production Support Engineer</h3>
+  <p><strong>Wipro</strong> – Client: <strong>Apple</strong></p>
+  <ul>
+    <li>24/7 production monitoring and support</li>
+    <li>Incident handling & SLA management</li>
+    <li>Root Cause Analysis (RCA)</li>
+    <li>Collaboration with dev & platform teams</li>
+  </ul>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="project">
+    <h3>DevOps Portfolio</h3>
+    <p>HTML, CSS portfolio deployed on GitHub Pages</p>
   </div>
 
-  <!-- HERO SECTION -->
-  <header class="hero" id="home">
-    <img src="images/me.jpg" class="profile-pic">
-    <h1>Mohd Tasleem Khan</h1>
-    <p>
-      DevOps Engineer | Site Reliability Engineer<br>
-      Production Support Engineer – Wipro (Client: Apple)
-    </p>
-    <a href="resume.pdf" download class="btn">Download Resume</a>
-  </header>
+  <div class="project">
+    <h3>CI/CD Pipeline (Learning)</h3>
+    <p>GitHub Actions for build & deploy automation</p>
+  </div>
 
-  <!-- NAVBAR -->
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#experience">Experience</a>
-    <a href="#education">Education</a>
-    <a href="#certificates">Certificates</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <div class="project">
+    <h3>Docker Practice</h3>
+    <p>Containerized applications using Docker</p>
+  </div>
+</section>
 
-  <!-- ABOUT -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a Production Support Engineer with 3.5+ years of experience at Wipro, currently supporting Apple’s Ads Platform Engineering systems.</p>
-    <p>My role involves monitoring large-scale production environments, handling incidents, performing root cause analysis, and ensuring high availability and reliability of services.</p>
-    <p>I am actively transitioning into DevOps and Site Reliability Engineering, focusing on automation, CI/CD pipelines, containerization, cloud infrastructure, and modern monitoring practices.</p>
-  </section>
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <h2>Contact</h2>
+  <p>📧 <a href="mailto:mohdtasleemkhan@gmail.com">mohdtasleemkhan@gmail.com</a></p>
+  <p>📞 <a href="tel:+91XXXXXXXXXX">+91 XXXXX XXXXX</a></p>
+</section>
 
-  <!-- SKILLS -->
-  <section id="skills">
-    <h2>Technical Skills</h2>
-    <div class="skills-container">
-      <div class="skill-box" data-level="90">Linux</div>
-      <div class="skill-box" data-level="85">Git & GitHub</div>
-      <div class="skill-box" data-level="70">Shell Scripting</div>
-      <div class="skill-box" data-level="60">CI/CD Pipelines</div>
-      <div class="skill-box" data-level="55">Docker</div>
-      <div class="skill-box" data-level="50">AWS (EC2, S3)</div>
-    </div>
-  </section>
+<!-- ===== SOCIAL ===== -->
+<section id="social">
+  <h2>Find Me Online</h2>
+  <p class="social-links">
+    <a href="https://www.linkedin.com/in/your-link" target="_blank">💼 LinkedIn</a> |
+    <a href="https://github.com/mohdtasleemkhan" target="_blank">🧑‍💻 GitHub</a> |
+    <a href="https://leetcode.com/your-username" target="_blank">🧠 LeetCode</a> |
+    <a href="https://www.youtube.com/@your-channel" target="_blank">▶️ YouTube</a> |
+    <a href="https://www.facebook.com/your-username" target="_blank">📘 Facebook</a>
+  </p>
+</section>
 
-  <!-- EXPERIENCE -->
-  <section id="experience">
-    <h2>Professional Experience</h2>
-    <h3>Production Support Engineer</h3>
-    <p><strong>Wipro</strong> | Client: <strong>Apple</strong></p>
-    <p><em>Ads Platform Engineering</em></p>
-    <ul>
-      <li>Provided 24/7 production support for Apple Ads Platform services</li>
-      <li>Monitored application health, performance, and system reliability</li>
-      <li>Handled incidents, alerts, and escalations within SLA timelines</li>
-      <li>Performed log analysis and root cause analysis (RCA)</li>
-      <li>Worked closely with development and platform teams</li>
-      <li>Ensured system availability, stability, and performance</li>
-    </ul>
-  </section>
+<footer>
+  <p>© 2026 Mohd Tasleem Khan</p>
+</footer>
 
-  <!-- EDUCATION -->
-  <section id="education">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>B.Tech in Computer Science</strong><br>XYZ University, 2016 - 2020</li>
-      <li><strong>High School</strong><br>ABC School, 2014 - 2016</li>
-    </ul>
-  </section>
-
-  <!-- CERTIFICATES -->
-  <section id="certificates">
-    <h2>Certificates</h2>
-    <ul>
-      <li><a href="certificates/aws-cloud-practitioner.pdf" target="_blank">AWS Cloud Practitioner</a></li>
-      <li><a href="certificates/docker-beginner.pdf" target="_blank">Docker Fundamentals</a></li>
-      <li><a href="certificates/github-actions.pdf" target="_blank">GitHub Actions for CI/CD</a></li>
-    </ul>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>DevOps Portfolio Website</h3>
-      <p>Built a responsive personal portfolio using HTML and CSS. Deployed using GitHub Pages to showcase DevOps and SRE profile.</p>
-    </div>
-    <div class="project">
-      <h3>CI/CD Pipeline (In Progress)</h3>
-      <p>Implementing CI/CD pipelines using GitHub Actions for automated build and deployment workflows.</p>
-    </div>
-    <div class="project">
-      <h3>Dockerized Application (Learning Project)</h3>
-      <p>Containerizing applications using Docker and Dockerfile to understand container lifecycle and deployments.</p>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <!-- SOCIAL LINKS -->
-  <section>
-    <h2>Find Me Online</h2>
-    <p>
-      <a href="https://github.com/mohdtasleemkhan" target="_blank">GitHub</a> |
-      <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-      <a href="https://www.linkedin.com" target="_blank">Facebook</a>
-      <a href="https://www.linkedin.com" target="_blank">Instagram</a>
-      <a href="https://www.linkedin.com" target="_blank">LeetCode</a>
-      <a href="https://www.linkedin.com" target="_blank"></a>
-    </p>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2026 Mohd Tasleem Khan | DevOps Engineer-SRE </p>
-  </footer>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
