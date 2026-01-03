@@ -168,33 +168,47 @@ footer a {
 }
 
 /* ===== MODAL / WELCOME POPUP ===== */
+/* ===== MODAL / WELCOME POPUP (IMPROVED HEIGHT) ===== */
 .modal {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.65);
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 999;
+  z-index: 9999;
 }
 
 .modal-content {
   background: #fff;
-  padding: 30px;
-  border-radius: 10px;
+  padding: 45px 40px;     /* 👈 lambai badhayi */
+  border-radius: 12px;
   text-align: center;
-  width: 320px;
+  width: 380px;           /* 👈 thoda bada box */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 26px;
+}
+
+.modal-content p {
+  font-size: 16px;
+  line-height: 1.6;       /* 👈 vertical spacing */
+  margin-bottom: 30px;
+  color: #444;
 }
 
 /* OK BUTTON */
 #modalOkBtn {
-  margin-top: 15px;
-  padding: 10px 28px;
+  padding: 12px 36px;     /* 👈 bada button */
   background: #0d6efd;
   color: #fff;
   border: none;
-  border-radius: 6px;
-  font-size: 15px;
+  border-radius: 8px;
+  font-size: 16px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
