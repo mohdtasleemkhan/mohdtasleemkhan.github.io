@@ -13,7 +13,7 @@
 <div id="welcomeModal" class="modal">
   <div class="modal-content">
     <h2>Welcome 👋</h2>
-    <p>Welcome to Mohd Tasleem Khan's Portfolio Website</p>
+    <p>Welcome to Mohd Tasleem Khan's Portfolio</p>
     <button id="modalOkBtn">OK</button>
   </div>
 </div>
@@ -22,9 +22,9 @@
 <header class="hero" id="home">
   <img src="images/me.jpg" class="profile-pic" alt="Profile">
   <h1>Mohd Tasleem Khan</h1>
-  <p>
-    <strong>DevOps Engineer at Apple</strong>
-  </p>
+  <p class="hero-role"> <strong>DevOps Engineer at Apple</strong> </p>
+  <p>Python | AWS | Azure | Docker | Kubernetes | Jenkins | Linux | SQL | Power BI | Ansible | Terraform</p>
+  <p>Wipro | Client: Apple | Location: Hyderabad</p>
 </header>
 
 <!-- NAVBAR -->
@@ -192,6 +192,11 @@
   <p>© 2026 Mohd Tasleem Khan | All Rights Reserved</p>
 </footer>
 
-<script src="script.js"></script>
+<script>
+document.getElementById("modalOkBtn").onclick = function () {
+  document.getElementById("welcomeModal").style.display = "none";
+};
+</script>
+
 </body>
 </html>
