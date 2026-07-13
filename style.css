@@ -84,11 +84,14 @@ nav a:hover {
 
 section {
     max-width: 900px;
-    margin: 35px auto;
-    padding: 35px;
+    margin: 25px auto;
+    padding: 28px 30px;
     background: #fff;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0,0,0,.06);
+
+    /* Fix for sticky navbar */
+    scroll-margin-top: 90px;
 }
 
 section h2 {
