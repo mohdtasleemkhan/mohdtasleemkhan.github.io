@@ -102,14 +102,24 @@ section h2 {
    SKILLS
 =========================== */
 
+/* ===========================
+   TECHNICAL SKILLS
+=========================== */
+
 #skills p {
-    margin-bottom: 12px;
+    margin: 0 0 12px;
     font-size: 16px;
-    line-height: 1.7;
+    line-height: 1.8;
+}
+
+#skills p:last-child {
+    margin-bottom: 0;
 }
 
 #skills strong {
     color: #2563eb;
+    display: inline-block;
+    min-width: 280px;
 }
 
 /* ===========================
@@ -209,6 +219,20 @@ section h2 {
 
 #modalOkBtn:hover {
     background: #1d4ed8;
+}
+/* ===========================
+   LISTS
+=========================== */
+
+ul {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding-left: 22px;
+}
+
+li {
+    margin-bottom: 8px;
+    line-height: 1.7;
 }
 
 /* ===========================
