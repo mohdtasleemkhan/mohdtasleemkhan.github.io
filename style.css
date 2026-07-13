@@ -102,44 +102,14 @@ section h2 {
    SKILLS
 =========================== */
 
-#skills {
-    margin-top: 60px;
+#skills p {
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 1.7;
 }
 
-.skill-category {
-    margin-bottom: 28px;
-}
-
-.skill-category h3 {
-    font-size: 20px;
-    color: #222;
-    margin-bottom: 14px;
-    font-weight: 600;
-}
-
-.skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-}
-
-.skill-box {
-    display: inline-block;
-    padding: 10px 18px;
-    background: #f8f9fa;
-    border: 1px solid #dcdcdc;
-    border-radius: 8px;
-    font-size: 15px;
-    font-weight: 500;
-    color: #333;
-    transition: all .3s ease;
-}
-
-.skill-box:hover {
-    background: #2563eb;
-    color: #fff;
-    border-color: #2563eb;
-    transform: translateY(-2px);
+#skills strong {
+    color: #2563eb;
 }
 
 /* ===========================
